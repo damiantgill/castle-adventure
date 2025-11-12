@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orange - Figma Design</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jacquard+12&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Controls -->
+    <div class="navigation">
+        <button class="nav-btn" onclick="showPage(1)">Page 1</button>
+        <button class="nav-btn" onclick="showPage(2)">Page 2</button>
+        <button class="nav-btn" onclick="showPage(3)">Page 3</button>
+    </div>
+
+    <!-- Page 1 -->
+    <div class="page active" id="page1" data-name="pg1">
+        <div class="house-fly-lg">
+            <img src="https://www.figma.com/api/mcp/asset/58bd8c39-346c-42d3-87dd-b16c1f1a474a" alt="House fly large background">
+        </div>
+        <a class="text-link" href="#" onclick="showPage(2); return false;">
+            <p>text test</p>
+        </a>
+    </div>
+
+    <!-- Page 2 -->
+    <div class="page" id="page2" data-name="pg2">
+        <a class="text-link page2-link" href="#" onclick="showPage(3); return false;">
+            <div>
+                <p>text test</p>
+            </div>
+        </a>
+    </div>
+
+    <!-- Page 3 -->
+    <div class="page" id="page3" data-name="pg3">
+        <div class="house-fly-sm">
+            <img src="https://www.figma.com/api/mcp/asset/130ef56c-483d-4dd0-9384-0ea046abced4" alt="House fly small">
+        </div>
+        <a class="text-link" href="#" onclick="showPage(1); return false;">
+            <p>text test</p>
+        </a>
+        <div class="drawing1">
+            <img src="https://www.figma.com/api/mcp/asset/72892549-edd0-493d-9556-1efebb608d9c" alt="Drawing">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
